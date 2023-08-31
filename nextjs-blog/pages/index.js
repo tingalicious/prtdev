@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import Date from '../components/date';
+import matter from 'gray-matter';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
